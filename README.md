@@ -1,2 +1,3 @@
 # EDN---Python
-Aulas Python da EDN
+
+Aulas Python da Escola da Nuvem
