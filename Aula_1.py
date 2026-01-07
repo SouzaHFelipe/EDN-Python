@@ -6,10 +6,10 @@ print("Olá, mundo!")
 # 2- Calculadora de Soma
 # * Desenvolva um programa que soma dois números. Use as variáveis numero1 = 12 e numero2 = 14. O programa deve calcular a soma e exibir o resultado.
 
-numero1 = 10
+numero1 = 12
 numero2 = 14
 soma = numero1 + numero2
-print(f"A soma de, {numero1}e {numero2} e {soma}")
+print(f"A soma de, {numero1} + {numero2} = {soma}")
       
 
 # 3- Calculadora de Volume
@@ -38,4 +38,4 @@ produto = "Cadeira Infantil"
 preco_unitario = 12.40
 quantidade = 3
 preco_total = preco_unitario * quantidade
-print(f"Produto: {produto}")
+print(f"Produto: {produto} \nPreco unitario : {preco_unitario} \nQuantidade : {quantidade} \nPreço Total: R$ {preco_total}")
