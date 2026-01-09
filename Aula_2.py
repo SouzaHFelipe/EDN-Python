@@ -11,8 +11,8 @@ def conversor(valor_reais, taxa_dolar, taxa_euro):
     euro = valor_reais * taxa_euro
     return dolar , euro
 
-dolar, euro = conversor(100, 5.20, 6.15)
-print(f"Dolar: R$ {dolar:.2f} , Euro: R$ {euro:.2f}")
+dolar, euro = conversor(100, 5.20 , 6.15)
+print(f"Dolar: R$ {dolar:.2f} \nEuro: R$ {euro:.2f} \n")
     
 
 # 2- Calculadora de Desconto
@@ -26,11 +26,12 @@ print(f"Dolar: R$ {dolar:.2f} , Euro: R$ {euro:.2f}")
 
 def calculadora(produto , preco_original , desconto):
     desconto = preco_original * desconto
-    return produto , preco_original , desconto
+    preco_final = preco_original - desconto
+    return produto , preco_original , desconto , preco_final
 
-produto , preco_original , desconto = calculadora('Camiseta' , 50 , 0.20)
+produto , preco_original , desconto , preco_final = calculadora('Camiseta' , 50 , 0.20)
 
-print(f'Produto : {produto} , Valor R$ {preco_original} ,  Desconto {desconto}')
+print(f'Produto : {produto} \nValor R${preco_original:.2f}  \nDesconto R${desconto:.2f} \nPreco com desconto R${preco_final:.2f}\n')
 
 
 # 3- Calculadora de Média Escolar
@@ -49,7 +50,7 @@ nota1 , nota2 , nota3 = 7.5 , 8.0 , 6.5
 
 media_final = media(nota1 , nota2 , nota3)
 
-print(f' n1 {nota1} , n2  {nota2} , n3  {nota3} , media {media_final:.2f}') 
+print(f'Nota 1 : {nota1} \nNota 2 : {nota2} \nNota 3 : {nota3} \nMedia : {media_final:.2f}\n') 
      
     
 # 4- Calculadora de Consumo de Combustível
@@ -68,4 +69,4 @@ distancia , combustivel =  300 , 25
 
 resultado = consumo_medio(distancia , combustivel)
 
-print(f" Distância percorrida: {distancia} Km , Combustível gasto: {combustivel} Litros , Km por litro : {resultado}")
+print(f"Distância percorrida: {distancia} Km \nCombustível gasto: {combustivel} Litros \nKm por litro : {resultado:.2f}")
